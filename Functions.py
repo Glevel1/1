@@ -15,7 +15,7 @@ class Func(Base):
             self.find_clickable_element(PagesLocators.browser_btn, 10).click() #Переход в браузерную версию веб-игры
         except TimeoutException:
             self.find_clickable_element(PagesLocators.browser_btn_error, 4).click()
-        # time.sleep(60) #Задержка, чтоб юзер зашел в свой аккаунт
+        time.sleep(60) #Задержка, чтоб юзер зашел в свой аккаунт
 
     def move_forward(self):
         keyboard.press("w")
@@ -77,7 +77,7 @@ class Func(Base):
         time.sleep(2)
         pyautogui.click()
         time.sleep(20)
-        # time.sleep(60) #Задержка до окончания бая
+        time.sleep(120) #Задержка до окончания бая
 
 
 
